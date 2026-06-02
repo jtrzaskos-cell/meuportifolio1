@@ -6,13 +6,16 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
+/* ==================== CABEÇALHO ==================== */
 header {
     background-color: #424e61;
     color: white;
-    width: 100%;
-    padding: 20px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cabecalho-itens {
@@ -20,115 +23,176 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Melhor que center para cabeçalho */
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
 }
 
-/* ==================== IMAGEM DO CABEÇALHO ==================== */
-.cabecalho-imagem {
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.cabecalho-imagem img {
-    width: 80px;
-    height: 80px;
+.cabecalho_imagem {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titulo_site {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.sociais img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sociais img:hover {
+    transform: scale(1.1);
 }
 
 /* ==================== BANNER ==================== */
 .banner1 {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
 }
 
 .banner1 img {
     width: 100%;
-    max-width: 1000px;        /* Ajuste conforme necessário */
-    height: auto;
+    max-width: 1100px;
+    height: 520px;
     border-radius: 50%;
     object-fit: cover;
-    border: none;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-.titulo_site {
-    padding: 50px;
-    text-align: center;
-    width: 50%;
-    font-size: 30px;           /* Corrigido */
-    font-weight: bold;
-}
-
-.sociais {
-    display: flex;
-    justify-content: flex-end;
-    width: 25%;
-    padding-right: 30px;
-}
-
-/* ==================== ESTUDANTES ==================== */
-.estudante_titulo {
-    padding: 50px;
-    text-align: center;
-}
-
-.estudante-nome {
-    text-align: center;
-}
-
-.estudante-imagem {
-    width: 120px;
-}
-
-.estudante-icone {
-    width: 38px;
-    padding: 4px 8px;
-}
-
+/* ==================== SEÇÃO ESTUDANTES ==================== */
 .estudante {
-    background-color: #faae43;     /* Corrigido */
-    padding: 24px 0;
+    padding: 60px 20px;
+    background-color: #faae43;
 }
 
-.estudante div {                   /* Corrigido */
+.estudante_titulo {
     text-align: center;
-    padding: 24px 0;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #424e61;
 }
 
 .estudantes_todos {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;               /* Boa prática para responsividade */
-    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* ==================== ESCOLA ==================== */
+.estudante-div {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.estudante-div:hover {
+    transform: translateY(-10px);
+}
+
+.estudante-imagem {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #424e61;
+}
+
+.estudante-nome {
+    font-size: 1.4rem;
+    margin: 12px 0;
+    color: #424e61;
+}
+
+.estudante-icone {
+    width: 38px;
+    height: 38px;
+    margin: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.estudante-icone:hover {
+    transform: scale(1.15);
+}
+
+/* ==================== RODAPÉ (FOOTER) ==================== */
 .escola {
     background-image: linear-gradient(#40A2E3, #7FC2EF);
     color: white;
-    display: flex;
-    justify-content: center;
-    padding: 24px 0;
     text-align: center;
-}
-
-.escola-titulo {
-    padding: 50px;
-    text-align: center;
+    padding: 50px 20px;
 }
 
 .logo_rodape {
-    height: 80px;
-    padding: 12px 0;
+    height: 90px;
+    margin-bottom: 20px;
 }
 
-.link {
-    color: #ffffff;
+.escola-título {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.escola-título a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.escola-título a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+    .cabecalho-itens {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .titulo_site {
+        font-size: 1.8rem;
+    }
+    
+    .banner1 img {
+        height: 380px;
+        max-width: 380px;
+    }
+    
+    .estudante-div {
+        width: 100%;
+        max-width: 280px;
+    }
 }
