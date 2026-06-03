@@ -19,7 +19,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.cabecalho-imagem{
+.cabecalho_imagem{
 width: 10%;
 display: flex;
 justify-content: flex-start;
@@ -37,7 +37,7 @@ justify-content: flex-end;
 width: 25%;
 padding-right: 30px;
 }
-.banner1{
+.banner{
 display: flex;
 justify-content: center;
 }
