@@ -39,12 +39,12 @@ padding-right: 30px;
 }
 .banner1{
 display: flex;
-justify-content: flex-end;
+justify-content: center;
 }
 
 .escola.image{
-width: 20%; 
-max-width: 100px;
+width: 100%; 
+max-width: 1980px;
 height: auto;       
 display: block;     
 margin: 0 auto;       
