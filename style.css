@@ -44,11 +44,7 @@ justify-content: center;
 
 .escola.image{
 width: 300%; 
-max-width: 1980px;
-height: auto;       
-display: block;     
-margin: 0 auto;       
-object-fit: contain;   
+max-width: 1980px;   
 }
 
 .estudante_titulo{
