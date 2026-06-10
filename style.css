@@ -42,13 +42,23 @@ display: flex;
 justify-content: center;
 }
 
-.escola.image {
-width: 1980px;                    
-max-width: 100%;                
-height: 500px;                   
-object-fit: cover;              
-object-position: center;        
-margin: 0;
+.banner1 {
+    width: 100%;
+    height: 100vh;          
+    position: relative;
+    overflow: hidden;
+    margin-top: -20px;   
+}
+
+.escola.image {          
+    width: 50%;
+    height: 50%;
+    object-fit: cover;      
+    object-position: center; 
+}
+.escola.image{
+width: 100%; 
+max-width: 1980px;   
 }
 
 .estudante_titulo{
