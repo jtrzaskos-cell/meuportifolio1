@@ -42,9 +42,14 @@ display: flex;
 justify-content: center;
 }
 
-.escola.image{
-width: 100%; 
-max-width: 1980px;   
+.escola-image {
+width: 100vw;                    
+max-width: 100%;                
+height: 500px;                   
+object-fit: cover;              
+object-position: center;        
+display: block;
+margin: 0;
 }
 
 .estudante_titulo{
