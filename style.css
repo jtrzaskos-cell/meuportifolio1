@@ -25,10 +25,11 @@ header {
 }
 
 .cabecalho_imagem {
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .titulo_site {
