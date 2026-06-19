@@ -121,8 +121,13 @@ header {
     padding: 50px;
     text-align: center;
 }
-.melhor-time {
-    background-color: linear-gradient(green, blue);
+.titulo-time {
+    display: flex;
+    justify-content: center;
+}
+
+.palmeiras {
+    
 }
 
 .logo_rodape {
