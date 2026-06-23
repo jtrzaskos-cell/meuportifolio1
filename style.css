@@ -127,10 +127,12 @@ header {
 }
 
 .palmeiras {
-    color: green;
+    background-color: green;
+    display: flex;
+    justify-content: center;
 }
 .gremio {
-    color: blue;
+    background-color: blue;
 }
 
 .logo_rodape {
