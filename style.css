@@ -121,19 +121,6 @@ header {
     padding: 50px;
     text-align: center;
 }
-.titulo-time {
-    display: flex;
-    justify-content: center;
-}
-
-.palmeiras {
-    background-color: green;
-    display: flex;
-    justify-content: center;
-}
-.gremio {
-    background-color: blue;
-}
 
 .logo_rodape {
     height: 80px;
