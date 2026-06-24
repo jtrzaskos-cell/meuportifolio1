@@ -63,6 +63,17 @@ header {
     margin: 0 auto;
 }
 
+.sobre-mim1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start
+}
+
+.sobre-mim2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .estudante_titulo {
     padding: 50px;
