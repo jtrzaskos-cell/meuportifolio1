@@ -63,50 +63,45 @@ header {
     margin: 0 auto;
 }
 
-/* CSS para a seção "Sobre Mim" */
-
 .sobre-mim {
-    max-width: 900px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     font-family: 'Arial', sans-serif;
 }
 
 .sobre-mim1 {
-    background: #fff;
-    border-radius: 12px;
-    padding: 30px;
+    margin-bottom: 50px;
 }
 
 .titulo-sobremim {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+    margin-bottom: 25px;
 }
 
 .parte1 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
     text-align: justify;
-    padding: 15px;
+    margin-bottom: 30px;
 }
 
 .sobre-mim2 {
-    background: #fff;
-    padding: 30px;
+    margin-top: 30px;
 }
 
 .gosto {
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .parte2 {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.15rem;
+    line-height: 1.7;
     text-align: center;
-    padding: 20px;
-    background: #fafafa;
 }
-
 .estudante_titulo {
     padding: 50px;
     text-align: center;
