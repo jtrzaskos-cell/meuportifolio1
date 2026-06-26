@@ -80,19 +80,19 @@ header {
     padding: 40px;
 }
 
+/* Títulos sem caixa azul - apenas texto */
 .fundacao-titulo,
 .titulos,
 .prin-jog {
-    background: linear-gradient(to right, #003087, #00A3E0);
-    color: white;
-    padding: 15px 25px;
-    margin: 25px 0 15px 0;
-    border-radius: 8px;
-    font-size: 1.6rem;
+    color: #00A3E0;
+    font-size: 2rem;
     font-weight: bold;
+    margin: 30px 0 15px 0;
     text-align: center;
-    border-bottom: 5px solid #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 10px;
 }
 
 .texto-fund,
@@ -101,15 +101,17 @@ header {
     line-height: 1.8;
     font-size: 1.1rem;
     text-align: justify;
-    padding: 0 10px;
+    padding: 0 15px;
+    color: #e0f0ff;
 }
 
+/* Mantém as quebras de linha */
 .texto-titu,
 .texto-jog {
-    white-space: pre-line; /* Mantém as quebras de linha do texto */
+    white-space: pre-line;
 }
 
-/* Estilo das listas dentro dos textos */
+/* Destaque nas palavras fortes */
 .texto-titu strong,
 .texto-jog strong {
     color: #00D4FF;
@@ -124,8 +126,7 @@ header {
     .fundacao-titulo,
     .titulos,
     .prin-jog {
-        font-size: 1.4rem;
-        padding: 12px 20px;
+        font-size: 1.6rem;
     }
     
     .texto-fund,
@@ -135,7 +136,7 @@ header {
     }
 }
 
-/* Efeito hover suave */
+/* Efeito suave no container */
 .gremio:hover {
     box-shadow: 0 20px 40px rgba(0, 163, 224, 0.3);
     transform: translateY(-5px);
