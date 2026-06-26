@@ -62,6 +62,85 @@ header {
     display: block;
     margin: 0 auto;
 }
+/* ====================== CSS - HISTÓRIA DO GRÊMIO ====================== */
+
+.gremio {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #0A2540 0%, #001F3F 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    border: 4px solid #ffffff;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #ffffff;
+}
+
+.fundacao {
+    padding: 40px;
+}
+
+.fundacao-titulo,
+.titulos,
+.prin-jog {
+    background: linear-gradient(to right, #003087, #00A3E0);
+    color: white;
+    padding: 15px 25px;
+    margin: 25px 0 15px 0;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto-fund,
+.texto-titu,
+.texto-jog {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.texto-titu,
+.texto-jog {
+    white-space: pre-line; /* Mantém as quebras de linha do texto */
+}
+
+/* Estilo das listas dentro dos textos */
+.texto-titu strong,
+.texto-jog strong {
+    color: #00D4FF;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .fundacao {
+        padding: 25px;
+    }
+    
+    .fundacao-titulo,
+    .titulos,
+    .prin-jog {
+        font-size: 1.4rem;
+        padding: 12px 20px;
+    }
+    
+    .texto-fund,
+    .texto-titu,
+    .texto-jog {
+        font-size: 1rem;
+    }
+}
+
+/* Efeito hover suave */
+.gremio:hover {
+    box-shadow: 0 20px 40px rgba(0, 163, 224, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
+}
 
 .estudante_titulo {
     padding: 50px;
