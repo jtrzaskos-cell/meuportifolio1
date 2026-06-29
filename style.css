@@ -179,7 +179,6 @@ header {
     font-size: 1.8rem;
     color: white;
     margin-bottom: 20px;
-    text-shadow: 0 2px 8px rgba(0, 170, 255, 0.4);
 }
 
 .mapa-container iframe {
@@ -196,7 +195,7 @@ header {
 }
 
 .escola{
-background-image: linear-gradient(#40A2E3,#7FC2EF);
+background-color:blue;
 color: white;
 display: flex;
 justify-content:center;
