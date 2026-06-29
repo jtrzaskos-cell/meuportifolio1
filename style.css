@@ -62,74 +62,66 @@ header {
     display: block;
     margin: 0 auto;
 }
-/* Reset básico e centralização */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
+/* ====================== CSS - HISTÓRIA DO GRÊMIO ====================== */
 
 .gremio {
-    max-width: 800px;
-    width: 100%;
-    background-color: white;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: black;
 }
 
-/* Títulos */
+.fundacao {
+    padding: 40px;
+}
+
+/* Títulos sem caixa azul - apenas texto */
 .fundacao-titulo,
 .titulos,
 .prin-jog {
-    font-size: 1.8rem;
-    color: #003087;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Textos */
 .texto-fund,
 .texto-titu,
 .texto-jog {
+    line-height: 1.8;
     font-size: 1.1rem;
-    line-height: 1.7;
-    color: #333;
     text-align: justify;
-    margin-bottom: 35px;
+    padding: 0 15px;
+    color: black;
 }
 
-/* Espaçamento entre seções */
-.fundacao {
-    margin-bottom: 40px;
+/* Mantém as quebras de linha */
+.texto-titu,
+.texto-jog {
+    white-space: pre-line;
 }
 
-.titulos-gremio,
-.prin-jogadores {
-    margin-top: 40px;
-}
 
-/* Responsivo */
-@media (max-width: 600px) {
-    .gremio {
-        padding: 20px;
+/* Responsividade */
+@media (max-width: 768px) {
+    .fundacao {
+        padding: 25px;
     }
     
     .fundacao-titulo,
     .titulos,
     .prin-jog {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+    
+    .texto-fund,
+    .texto-titu,
+    .texto-jog {
+        font-size: 1rem;
     }
 }
+
 .estudante_titulo {
     padding: 50px;
     text-align: center;
