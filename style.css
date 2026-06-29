@@ -64,61 +64,82 @@ header {
 }
 /* ====================== CSS - HISTÓRIA DO GRÊMIO ====================== */
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a1f3d 0%, #1e3a8a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
 .gremio {
-    max-width: 1000px;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    color: black;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .fundacao {
-    padding: 40px;
+    padding: 50px 40px;
 }
 
-/* Títulos sem caixa azul - apenas texto */
 .fundacao-titulo,
 .titulos,
 .prin-jog {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 30px 0 15px 0;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00aaff;
+    text-shadow: 0 2px 10px rgba(0, 170, 255, 0.3);
 }
 
 .texto-fund,
 .texto-titu,
 .texto-jog {
-    line-height: 1.8;
     font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0f0ff;
     text-align: justify;
-    padding: 0 15px;
-    color: black;
 }
 
-/* Mantém as quebras de linha */
-.texto-titu,
-.texto-jog {
-    white-space: pre-line;
+.titulos-gremio,
+.prin-jogadores {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+.titulos-gremio .texto-titu,
+.prin-jogadores .texto-jog {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 6px solid #00aaff;
+}
 
-/* Responsividade */
+/* Destaques nos títulos importantes */
+.texto-titu strong,
+.texto-jog strong {
+    color: #00ccff;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
     .fundacao {
-        padding: 25px;
+        padding: 35px 25px;
     }
     
     .fundacao-titulo,
     .titulos,
     .prin-jog {
-        font-size: 1.6rem;
-    }
-    
-    .texto-fund,
-    .texto-titu,
-    .texto-jog {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 }
 
