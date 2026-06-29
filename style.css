@@ -166,17 +166,33 @@ header {
     justify-content: space-around;
 }
 
-.title-local{
-    display: flex;
-    justify-content: center;
-}
-.local {
-background-image: linear-gradient(#40A2E3,#7FC2EF);
+/* Mapa */
+.mapa-container {
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
 
-.maps-local{
-    display: flex;
-    justify-content: center;
+.mapa-titulo {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(0, 170, 255, 0.4);
+}
+
+.mapa-container iframe {
+    max-width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .mapa-container {
+        padding: 30px 20px;
+    }
 }
 
 .escola{
