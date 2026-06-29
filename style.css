@@ -175,10 +175,51 @@ background-image: linear-gradient(#40A2E3,#7FC2EF);
 }
 
 .maps-local{
+    margin: 0;
+    padding: 40px 20px;
+    background: #0A2540;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+.maps-container {
+    text-align: center;
+    width: 100%;
+    max-width: 850px;           /* Limita a largura máxima */
+    margin: 0 auto;
+}
+
+.maps-local {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    width: 100%;                /* Responsivo */
+    max-width: 800px;           /* Tamanho ideal no desktop */
+    height: 500px;
+    border: 0;
+}
+
+/* Título */
+h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 900px) {
+    .maps-local {
+        height: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .maps-local {
+        height: 350px;
+    }
+}
 .escola{
 background-image: linear-gradient(#40A2E3,#7FC2EF);
 color: white;
