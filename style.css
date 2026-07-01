@@ -62,63 +62,68 @@ header {
     display: block;
     margin: 0 auto;
 }
-/* ====================== CSS - HISTÓRIA DO GRÊMIO ====================== */
-
+/* ==================== ESTILO DA SEÇÃO GRÊMIO ==================== */
 .gremio {
-    max-width: 1000px;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    color: black;
-}
-
-.fundacao {
-    padding: 40px;
-}
-
-/* Títulos sem caixa azul - apenas texto */
-.fundacao-titulo,
-.titulos,
-.prin-jog {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 30px 0 15px 0;
+    background-color: #0000FF; /* Azul forte como solicitado */
+    color: white;
+    padding: 60px 20px;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gremio .fundacao {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+.gremio .fundacao-titulo,
+.gremio .titulos,
+.gremio .prin-jog {
+    color: white;
+    font-size: 2.2rem;
+    margin: 35px 0 20px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.texto-fund,
-.texto-titu,
-.texto-jog {
-    line-height: 1.8;
+/* Textos */
+.gremio .texto-fund,
+.gremio .texto-titu,
+.gremio .texto-jog {
+    color: #f0f0f0;
     font-size: 1.1rem;
-    text-align: justify;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
     padding: 0 15px;
-    color: black;
 }
 
-/* Mantém as quebras de linha */
-.texto-titu,
-.texto-jog {
-    white-space: pre-line;
+/* Espaçamento entre as seções internas */
+.titulos-gremio,
+.prin-jogadores {
+    margin-top: 50px;
 }
-
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .fundacao {
-        padding: 25px;
+    .gremio {
+        padding: 40px 15px;
     }
     
-    .fundacao-titulo,
-    .titulos,
-    .prin-jog {
-        font-size: 1.6rem;
+    .gremio .fundacao-titulo,
+    .gremio .titulos,
+    .gremio .prin-jog {
+        font-size: 1.8rem;
     }
     
-    .texto-fund,
-    .texto-titu,
-    .texto-jog {
-        font-size: 1rem;
+    .gremio .texto-fund,
+    .gremio .texto-titu,
+    .gremio .texto-jog {
+        font-size: 1.05rem;
     }
 }
 
