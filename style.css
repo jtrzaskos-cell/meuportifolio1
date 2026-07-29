@@ -137,11 +137,23 @@ header {
     margin-bottom: 15px;
 }
 
-.video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Proporção 16:9 (9 / 16 = 0.5625) */
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* O iframe ocupa 100% da área do container */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
 .estudante_titulo {
     padding: 50px;
