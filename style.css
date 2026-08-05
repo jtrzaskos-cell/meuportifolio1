@@ -154,7 +154,7 @@ header {
 
 
 .estudante_titulo {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -168,13 +168,16 @@ header {
     margin: 0 auto 15px;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0; /* evita que a imagem seja esmagada */
 }
+
 .estudante-imagem img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover; /* melhor que background-size para <img> */
+    object-position: center;
     border: none;
+    display: block;
 }
 
 .estudante-icone {
@@ -184,18 +187,64 @@ header {
 
 .estudante {
     color: white;
-    background-color: #3874FF;     
+    background-color: #3874FF;
     padding: 24px 0;
 }
 
-.estudante div {                   
+.estudante div {
     text-align: center;
-    padding: 24px 0;
+    padding: 24px 15px;
 }
 
+/* Container principal - agora responsivo */
 .estudantes_todos {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;              /* permite quebrar linha */
+    justify-content: center;      /* centraliza os itens */
+    gap: 30px 20px;               /* espaçamento vertical e horizontal */
+    padding: 0 15px;
+}
+
+/* ========== Responsividade ========== */
+
+/* Tablets e telas médias */
+@media (max-width: 992px) {
+    .estudante-imagem {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .estudante_titulo {
+        padding: 30px 15px;
+    }
+
+    .estudante-imagem {
+        width: 160px;
+        height: 160px;
+    }
+
+    .estudantes_todos {
+        gap: 25px 15px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .estudante-imagem {
+        width: 140px;
+        height: 140px;
+    }
+
+    .estudante {
+        padding: 16px 0;
+    }
+
+    .estudante div {
+        padding: 16px 10px;
+    }
 }
 
 /* Mapa */
