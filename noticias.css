@@ -1,6 +1,6 @@
 /* ================= NOTÍCIAS (parte principal) ================= */
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
   flex: 1;
@@ -8,9 +8,6 @@
 
 .posts {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 /* Card da notícia */
@@ -18,15 +15,9 @@
   display: flex;
   gap: 25px;
   background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Imagem da notícia */
@@ -44,7 +35,6 @@
 
 /* Conteúdo da notícia */
 .post-content {
-  padding: 20px 25px 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +52,7 @@
   color: #3874FF;
 }
 
-/* Título da notícia - cor principal #3874FF */
+/* Título da notícia */
 .post-title {
   font-size: 20px;
   margin-bottom: 12px;
@@ -72,7 +62,6 @@
 .post-title a {
   color: #3874FF;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .post-title a:hover {
@@ -92,10 +81,24 @@
   font-weight: 700;
   color: #3874FF;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .read-more:hover {
   color: #222;
   text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post-thumb {
+    width: 100%;
+  }
+
+  .post-thumb img {
+    height: 200px;
+  }
 }
