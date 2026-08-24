@@ -1,33 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grêmio - Contato</title>
-<link rel="stylesheet" href="contato.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Grêmio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos da página de Contato */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #0000FF;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contato {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .contato h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .contato > p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: white;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .btn-enviar {
+      width: 100%;
+      padding: 16px;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0000FF;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-enviar:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-2px);
+    }
+
+    .info-contato {
+      margin-top: 50px;
+      font-size: 1rem;
+      color: #e0e0e0;
+      line-height: 1.8;
+    }
+
+    .info-contato strong {
+      color: white;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .contato h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<!--header é a parte do cabeçalho do site, é o topo da página-->
-<header class="cabecalho-itens">
-<img class="cabecalho_imagem" src="I3nXL.jpg" alt="Logo">
-<h1 class="titulo_site">Grêmio Foot-Ball Porto Alegrense</h1>
-<div class="sociais">
-<img class="sociais" src="whatsapp (2).png"  alt="whatsapp">
-<img class="sociais" src="facebook (1).png" alt="Facebook">
-<img class="sociais" src="instagram (1).png" alt="instagram">
-</div>
-</header>
 
-<div class="horizontal">
-<ul class="horizontal">
-  <li><a href="index.html">Inicio</a></li>
-  <li><a href="noticias.html">Noticias</a></li>
-  <li><a href="galeria.html"> Galeria</a></li>
-  <li><a href="contato.html">Contato</a></li>
-</ul>
-</div>
+  <!-- Cabeçalho -->
+  <header class="cabecalho-itens">
+    <img class="cabecalho_imagem" src="I3nXL.jpg" alt="Logo do Grêmio">
+    <h1 class="titulo_site">Grêmio Foot-Ball Porto Alegrense</h1>
+    <div class="sociais">
+      <img class="sociais" src="whatsapp (2).png" alt="WhatsApp">
+      <img class="sociais" src="facebook (1).png" alt="Facebook">
+      <img class="sociais" src="instagram (1).png" alt="Instagram">
+    </div>
+  </header>
 
-<footer class="escola"></footer>
+  <!-- Menu de navegação -->
+  <div class="horizontal">
+    <ul class="horizontal">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- Conteúdo da página de Contato -->
+  <section class="contato">
+    <h1>Contato</h1>
+    <p>Fale com a gente! Envie sua mensagem, sugestão ou dúvida sobre o Grêmio.</p>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+    </form>
+
+    <div class="info-contato">
+      <p><strong>E-mail:</strong> contato@gremio.net</p>
+      <p><strong>Telefone:</strong> (51) 3218-2000</p>
+      <p><strong>Endereço:</strong> Arena do Grêmio – Porto Alegre / RS</p>
+    </div>
+  </section>
+<!--Footer-->
+  <footer class="escola"></footer>
 <img class="logo_rodape" src="I3nXL.jpg" alt="Logo da Escola">
 <h2 class="escola-título">Mais informações entre em contato
 <a class="link" href="https://wa.me/555132182000"> (51) 3218-2000 </a>
@@ -37,5 +181,6 @@
 Política de Privacidade | Proteção de dados | Encarregado de dados</p>
 <p> </p>
 </footer>
+
 </body>
 </html>
