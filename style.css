@@ -52,10 +52,11 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #080616;
+  text-align: center; /* Centraliza os itens do menu */
 }
 
 ul li {
-  float: left;
+  display: inline-block; /* Substitui o float para permitir centralização */
 }
 
 ul li a {
