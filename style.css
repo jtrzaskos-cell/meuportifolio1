@@ -322,110 +322,94 @@ color: #ffffff;
 text-decoration: none;
 }
 
-/* ================= NOTÍCIAS - LARGURA TOTAL ================= */
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 30px 40px;
-  flex: 1;
-}
-
-.posts {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/* Card da notícia - ocupa quase toda a largura */
+/* Card da notícia */
 .post {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.post:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-}
-
-/* Imagem da notícia */
+/* Imagem */
 .post-thumb {
   flex-shrink: 0;
-  width: 380px;
 }
 
 .post-thumb img {
-  width: 100%;
-  height: 260px;
+  width: 200px;
+  height: 130px;
   object-fit: cover;
-  display: block;
+  border-radius: 6px;
 }
 
-/* Conteúdo da notícia */
+/* Conteúdo */
 .post-content {
-  padding: 25px 30px 25px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex: 1;
+  justify-content: space-between;
 }
 
+/* Metadados (Autor e Data) */
 .post-meta {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 12px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 6px;
 }
 
 .post-meta .author {
-  font-weight: 600;
-  margin-right: 14px;
-  color: #3874FF;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
-/* Título da notícia */
+/* Título */
 .post-title {
-  font-size: 24px;
-  margin-bottom: 14px;
+  font-size: 1.1rem;
   line-height: 1.3;
+  margin-bottom: 8px;
 }
 
 .post-title a {
-  color: #3874FF;
+  color: #111;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .post-title a:hover {
-  color: #222;
+  color: #0d6efd;
 }
 
 /* Resumo */
 .post-excerpt {
-  font-size: 16px;
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 18px;
-  max-width: 700px;
+  margin-bottom: 12px;
 }
 
-/* Botão "Leia mais" */
+/* Botão / Link Leia mais */
 .read-more {
-  font-size: 16px;
-  font-weight: 700;
-  color: #3874FF;
+  font-size: 0.85rem;
+  color: #0d6efd;
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-weight: bold;
+  align-self: flex-start;
 }
 
 .read-more:hover {
-  color: #222;
   text-decoration: underline;
+}
+
+/* Responsividade para telas menores (Celulares) */
+@media (max-width: 600px) {
+  .post {
+    flex-direction: column;
+  }
+
+  .post-thumb img {
+    width: 100%;
+    height: auto;
+  }
 }
 
  /* Estilos da página de Contato */
