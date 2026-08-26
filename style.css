@@ -322,34 +322,46 @@ color: #ffffff;
 text-decoration: none;
 }
 
-/* Card transparente e sem sombras */
+/* Container principal das notícias */
+.posts-list {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Card de cada notícia */
 .post {
   display: flex;
   gap: 20px;
   background-color: transparent;
   padding: 16px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
 }
 
+/* Imagem da notícia */
 .post-thumb {
   flex-shrink: 0;
 }
 
 .post-thumb img {
-  width: 240px;
-  height: 140px;
+  width: 220px;
+  height: 130px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
+/* Conteúdo de texto */
 .post-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
 }
 
+/* Autor e Data */
 .post-meta {
   font-size: 0.85rem;
   color: #666;
@@ -357,12 +369,14 @@ text-decoration: none;
 
 .post-meta .author {
   font-weight: bold;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
+/* Título */
 .post-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.3;
+  margin: 0;
 }
 
 .post-title a {
@@ -370,20 +384,22 @@ text-decoration: none;
   text-decoration: none;
 }
 
+/* Resumo da notícia */
 .post-excerpt {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555;
+  margin: 0;
 }
 
+/* Link Leia Mais */
 .read-more {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #0d6efd;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 4px;
 }
 
-/* Responsivo para celular */
+/* Layout responsivo para telas pequenas */
 @media (max-width: 600px) {
   .post {
     flex-direction: column;
