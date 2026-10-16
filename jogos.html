@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jogos</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
 <!--header é a parte do cabeçalho do site, é o topo da página-->
@@ -28,29 +29,25 @@
 </div>
 
 
-<section id="jogo" class="secao-jogo">
-    <h2>Jogue agora</h2>
-    <p>Entre no jogo e tente sobreviver até o final da noite!</p>
 
-    <div class="quadro-jogo">
-        <iframe
-            src="https://cinco-noites-com-o-antonio.vercel.app/"
-            title="Meu jogo feito no Godot"
-            allow="autoplay; fullscreen; gamepad"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
-    </div>
+<div class="quadro-jogo">
+    <iframe
+        id="jogo-frame"
+        src="https://SEU-JOGO.vercel.app/"
+        title="Cinco Noites com o Antônio"
+        allow="autoplay; fullscreen; gamepad"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+</div>
 
-    <p class="link-jogo">
-        <a
-            href="https://cinco-noites-com-o-antonio.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer">
-            Abrir jogo em outra aba
-        </a>
-    </p>
-</section>
+<button
+    type="button"
+    id="botao-tela-cheia"
+    class="botao-tela-cheia">
+    ⛶ Tela cheia
+</button>
+
 
 
 <!--rodape-->

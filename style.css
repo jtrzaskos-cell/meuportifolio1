@@ -561,3 +561,32 @@ text-decoration: none;
 .link-jogo a:hover {
     text-decoration: underline;
 }
+
+
+/* Botão de tela cheia */
+.botao-tela-cheia {
+    display: block;
+    margin: 12px auto 30px;
+    padding: 12px 22px;
+    background: #171717;
+    color: #ffffff;
+    border: 1px solid #c49b45;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.botao-tela-cheia:hover {
+    background: #c49b45;
+    color: #111111;
+}
+
+/* O jogo ocupa a tela inteira */
+#jogo-frame:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background: #000000;
+}
