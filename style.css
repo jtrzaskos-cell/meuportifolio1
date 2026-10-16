@@ -563,6 +563,35 @@ text-decoration: none;
 }
 
 
+
+/* Área do jogo no site */
+.quadro-jogo {
+    width: calc(100% - 32px);
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    background: #080808;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* Jogo dentro da área */
+.quadro-jogo iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #000000;
+}
+
+/* Tela cheia somente quando solicitada */
+#jogo-frame:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background: #000000;
+}
+
 /* Botão de tela cheia */
 .botao-tela-cheia {
     display: block;
@@ -582,6 +611,7 @@ text-decoration: none;
     background: #c49b45;
     color: #111111;
 }
+
 
 /* O jogo ocupa a tela inteira */
 #jogo-frame:fullscreen {
