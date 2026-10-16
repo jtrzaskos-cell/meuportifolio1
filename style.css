@@ -522,33 +522,39 @@ text-decoration: none;
       }
     }
 
-    
+
+
+
 /* Seção do jogo */
 .secao-jogo {
     width: calc(100% - 32px);
-    max-width: 1100px;
-    margin: 40px auto;
+    max-width: 1400px;
+    margin: 30px auto;
+    box-sizing: border-box;
     text-align: center;
 }
 
 /* Área onde o jogo aparece */
-.quadro-jogo {
+.secao-jogo .quadro-jogo {
     width: 100%;
+    max-width: 100%;
     aspect-ratio: 16 / 9;
+    margin: 0 auto;
     background: #080808;
     overflow: hidden;
     border-radius: 14px;
 }
 
-/* O jogo ocupa toda a área */
-.quadro-jogo iframe {
+/* Jogo dentro da área */
+.secao-jogo .quadro-jogo iframe {
     display: block;
     width: 100%;
     height: 100%;
     border: none;
+    background: #000000;
 }
 
-/* Link para abrir o jogo separadamente */
+/* Link para abrir o jogo em outra aba */
 .link-jogo {
     margin-top: 14px;
 }
@@ -560,36 +566,6 @@ text-decoration: none;
 
 .link-jogo a:hover {
     text-decoration: underline;
-}
-
-
-
-/* Área do jogo no site */
-.quadro-jogo {
-    width: calc(100% - 32px);
-    max-width: 1400px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    background: #080808;
-    overflow: hidden;
-    border-radius: 14px;
-}
-
-/* Jogo dentro da área */
-.quadro-jogo iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: #000000;
-}
-
-/* Tela cheia somente quando solicitada */
-#jogo-frame:fullscreen {
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    background: #000000;
 }
 
 /* Botão de tela cheia */
@@ -612,11 +588,11 @@ text-decoration: none;
     color: #111111;
 }
 
-
-/* O jogo ocupa a tela inteira */
+/* O jogo ocupa a tela inteira somente quando solicitado */
 #jogo-frame:fullscreen {
     width: 100vw;
     height: 100vh;
     border: none;
+    border-radius: 0;
     background: #000000;
 }
