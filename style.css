@@ -521,3 +521,43 @@ text-decoration: none;
         font-size: 1.9rem;
       }
     }
+
+    
+/* Seção do jogo */
+.secao-jogo {
+    width: calc(100% - 32px);
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Área onde o jogo aparece */
+.quadro-jogo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #080808;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* O jogo ocupa toda a área */
+.quadro-jogo iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Link para abrir o jogo separadamente */
+.link-jogo {
+    margin-top: 14px;
+}
+
+.link-jogo a {
+    color: #c49b45;
+    text-decoration: none;
+}
+
+.link-jogo a:hover {
+    text-decoration: underline;
+}
